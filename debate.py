@@ -4,6 +4,7 @@ Simulates debates between two given AI agents, which are judged by a third AI.
 
 TODO:
 - Need some function to evaluate the winner of the AI debate
+    - Need to assign a score to each model, somehow.
 
 TODO (but not part of MVP):
 - Control for whether each AI is forced to argue FOR or AGAINST
@@ -72,64 +73,64 @@ def get_dataset() -> list[Sample]:
     dataset = [
         Sample(
             input="Cereal is a soup."
-        ),
-        Sample(
-            input="You should fight one horse-sized duck instead of 100 duck-sized horses."
-        ),
-        Sample(
-            input="A hot dog is a sandwich."
-        ),
-        Sample(
-            input="Cats are secretly smarter than humans."
-        ),
-        Sample(
-            input="Pineapple belongs on pizza."
-        ),
-        Sample(
-            input="It is morally wrong to eat the last slice of pizza without asking."
-        ),
-        Sample(
-            input="The world would be better if everyone had personal theme music."
-        ),
-        Sample(
-            input="Socks with sandals are a legitimate fashion choice."
-        ),
-        Sample(
-            input="A burrito is just a folded taco."
-        ),
-        Sample(
-            input="Naps should be mandatory for adults."
-        ),
-        Sample(
-            input="Water is wet."
-        ),
-        Sample(
-            input="If you replace every part of a broom over time, it is still the same broom."
-        ),
-        Sample(
-            input="It would be better to sing everything instead of speaking."
-        ),
-        Sample(
-            input="Ghosts are just misunderstood roommates."
-        ),
-        Sample(
-            input="Clapping should be replaced with jazz hands."
-        ),
-        Sample(
-            input="A pop-tart is a type of ravioli."
-        ),
-        Sample(
-            input="It is acceptable to recline your seat on an airplane."
-        ),
-        Sample(
-            input="Aliens are avoiding Earth because of our reality TV shows."
-        ),
-        Sample(
-            input="If animals could talk, cats would be the rudest species."
-        ),
-        Sample(
-            input="Spaghetti for hair would be better than maple syrup for sweat."
         )
+        # Sample(
+        #     input="You should fight one horse-sized duck instead of 100 duck-sized horses."
+        # ),
+        # Sample(
+        #     input="A hot dog is a sandwich."
+        # ),
+        # Sample(
+        #     input="Cats are secretly smarter than humans."
+        # ),
+        # Sample(
+        #     input="Pineapple belongs on pizza."
+        # ),
+        # Sample(
+        #     input="It is morally wrong to eat the last slice of pizza without asking."
+        # ),
+        # Sample(
+        #     input="The world would be better if everyone had personal theme music."
+        # ),
+        # Sample(
+        #     input="Socks with sandals are a legitimate fashion choice."
+        # ),
+        # Sample(
+        #     input="A burrito is just a folded taco."
+        # ),
+        # Sample(
+        #     input="Naps should be mandatory for adults."
+        # ),
+        # Sample(
+        #     input="Water is wet."
+        # ),
+        # Sample(
+        #     input="If you replace every part of a broom over time, it is still the same broom."
+        # ),
+        # Sample(
+        #     input="It would be better to sing everything instead of speaking."
+        # ),
+        # Sample(
+        #     input="Ghosts are just misunderstood roommates."
+        # ),
+        # Sample(
+        #     input="Clapping should be replaced with jazz hands."
+        # ),
+        # Sample(
+        #     input="A pop-tart is a type of ravioli."
+        # ),
+        # Sample(
+        #     input="It is acceptable to recline your seat on an airplane."
+        # ),
+        # Sample(
+        #     input="Aliens are avoiding Earth because of our reality TV shows."
+        # ),
+        # Sample(
+        #     input="If animals could talk, cats would be the rudest species."
+        # ),
+        # Sample(
+        #     input="Spaghetti for hair would be better than maple syrup for sweat."
+        # )
     ]
 
     return dataset
